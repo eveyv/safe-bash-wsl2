@@ -1,0 +1,32 @@
+
+# some more ls aliases
+alias ll='ls -alF'
+alias la='ls -A'
+alias l='ls -CF'
+
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
+#emulate zsh backwards function
+alias ..="cd .."
+alias ...="cd ../.."
+
+#git commmands
+alias gs="git status"
+alias gal="git add ."
+alias gc="git commit -m"
+alias gcot="git checkout"
+alias go="git push origin"
+
+#ubunalias sai="sudo apt install"
+alias sai="sudo apt-get install"
+alias sau="sudo apt update"
+alias sau="sudo apt-get update"
+alias update="sudo apt update"
+alias sar="sudo apt-get remove"
+#system state
+alias reboot="sudo /sbin/reboot"
+alias shutdown="sudo /sbin/shutdown"
+# Get GPU ram on desktop / laptop
+alias gpumeminfo="grep -i --color memory /var/log/Xorg.0.log"
