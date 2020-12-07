@@ -108,7 +108,6 @@ alias gal="git add ."
 alias gc="git commit -m"
 alias gcot="git checkout"
 alias go="git push origin"
-alias @="HEAD"
 
 # open bash file 
 # alias openb="cd /~ code .bashrc"
