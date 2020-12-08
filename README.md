@@ -1,6 +1,6 @@
 These config files are for quick reference, whether to revert or to setup a new machine, this project will serve as a working outline of the process to setup a wsl2 development enviroment on a given windows system (assuming the system meets requirements found here: ```https://docs.microsoft.com/en-us/windows/wsl/compare-versions```). 
 
-I had to do this out of desperation after my 2019 macbook air fought out of its weight class against a large, hot coffee. it went out quite tragically but I thankfully found a hardly used dell g7 on craigslist and rolled the dice. I couldnt be happier with the end result.
+I had to do this out of desperation after my 2019 macbook air fought out of its weight class against a large, hot coffee. It turned out quite tragically but I thankfully found a gently-used used dell g7 on craigslist and rolled the dice. I couldnt be happier with the end result.
 
 steps to setup wsl2 development enviroment:
 
