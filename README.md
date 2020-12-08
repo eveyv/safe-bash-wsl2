@@ -2,11 +2,11 @@ These config files are for quick reference, whether to revert or to setup a new 
 
 I had to do this out of desperation after my 2019 macbook air fought out of its weight class against a large, hot coffee. It turned out quite tragically but I thankfully found a gently-used used dell g7 on craigslist and rolled the dice. I couldnt be happier with the end result.
 
-steps to setup wsl2 development enviroment:
+Steps to setup wsl2 development enviroment:
 
-make sure to run any commands for windows-based apps though opening powershell as an administrator.
+Make sure to run any commands for windows-based apps though opening powershell as an administrator.
 
-install chocolatey package manager ```https://chocolatey.org/install```  for quick and easy installation of windows apps and programs such as windows-terminal and vscode(there is a plugin for vs code that recognizes when it is being run on the sub-system). Think of it as homebrew but with a less hip name. (you can still use homebrew if you really want to once you get set up in wsl2).
+Install chocolatey package manager ```https://chocolatey.org/install```  for quick and easy installation of windows apps and programs such as windows-terminal and vscode(there is a plugin for vs code that recognizes when it is being run on the sub-system). Think of it as homebrew but with a less hip name. (you can still use homebrew if you really want to once you get set up in wsl2).
 
 I immediatley then use chocolatey to install any programs such as aquasnap (shiftit but better) and 8gadgetpack. You can use it to install spotify and the like, so have at it.
 
