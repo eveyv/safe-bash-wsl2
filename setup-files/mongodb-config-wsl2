@@ -1,1 +1,8 @@
+#ensure you are in root folder of your subsystem (navigate backwards two directories from ~) and then create the path that mongodb requires for its data dump:
+sudo mkdir -p data/db
 
+#once the path has been created, permissions must be given for access:
+sudo chown -R `id -un` data/db
+
+#run the command to confirm the local db fires up!:
+mongod
