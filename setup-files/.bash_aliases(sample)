@@ -14,6 +14,7 @@ alias myaliases="code .bash_aliases"
 #backwards navigation
 alias ..="cd .."
 alias ...="cd ../.."
+
 alias home="cd /home/wsl_ev"
 #git commmands
 alias gs="git status"
@@ -24,22 +25,25 @@ alias go="git push origin"
 alias gclo="git clone"
 alias g@="HEAD"
 alias shit="git remote set-url origin git@github.com:eveyv/"
+
 #ubunalias sai="sudo apt install"
 alias sai="sudo apt-get install"
 alias sau="sudo apt update"
 alias sau="sudo apt-get update"
 alias update="sudo apt update"
 alias sar="sudo apt-get remove"
+
 #system state
 alias reboot="sudo /sbin/reboot"
 alias shutdown="sudo /sbin/shutdown"
 # Get GPU ram on desktop / laptop
 alias gpumeminfo="grep -i --color memory /var/log/Xorg.0.log"
+
 #postgresql
 alias pgstart="sudo service postgresql start"
 alias pgstop="sudo service postgresql stop"
 alias pgconnect="sudo -u postgres psql"
 # locate windows IP from ubuntu session
 alias myip="ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1"
-#migrations for postgresql in rails
+#migrations for postgresql in rails (missing syntax)
 alias mrm="rails db:migrate rails db:rollback rails db:migrate"
