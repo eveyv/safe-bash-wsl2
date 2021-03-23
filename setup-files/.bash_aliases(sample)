@@ -9,13 +9,13 @@ alias lemmechange="sudo chmod a+w"
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 #quick edit bash
-alias bedit="code .bashrc"
-alias myaliases="code .bash_aliases"
+alias bedit="cd /home/everett && code .bashrc"
+alias myalias="cd /home/everett && code .bash_aliases"
 #backwards navigation
 alias ..="cd .."
 alias ...="cd ../.."
 
-alias home="cd /home/wsl_ev"
+alias home="cd /home/everett"
 #git commmands
 alias gs="git status"
 alias gal="git add ."
@@ -24,7 +24,7 @@ alias gcot="git checkout"
 alias go="git push origin"
 alias gclo="git clone"
 alias g@="HEAD"
-alias shit="git remote set-url origin git@github.com:eveyv/"
+alias set="git remote set-url origin git@github.com:eveyv/"
 
 #ubunalias sai="sudo apt install"
 alias sai="sudo apt-get install"
@@ -43,7 +43,13 @@ alias gpumeminfo="grep -i --color memory /var/log/Xorg.0.log"
 alias pgstart="sudo service postgresql start"
 alias pgstop="sudo service postgresql stop"
 alias pgconnect="sudo -u postgres psql"
+
 # locate windows IP from ubuntu session
 alias myip="ip addr show eth0 | grep 'inet\b' | awk '{print $2}' | cut -d/ -f1"
-#migrations for postgresql in rails (missing syntax)
-alias mrm="rails db:migrate rails db:rollback rails db:migrate"
+
+#migrations for postgresql in rails
+alias mrm="bundle exec rails db:migrate && bundle exec rails db:rollback && bundle exec rails db:migrate"
+
+#weather related stuff:
+alias hometemp="curl wttr.in/"
+alias temp="curl wttr.in/"
